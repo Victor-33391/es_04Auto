@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="es_03.php" method="get">
+        <table>
+            <tr>
+                <td>Marca: </td>
+                <td>
+                    <select name="marca" id="marca">
+                        <option value="alfa_romeo">Alfa Romeo</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="bmw">BMW</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Modello: </td>
+                <td><input type="text" id="modello" name="modello"></td>
+            </tr>
+            <tr>
+                <td>Stato: </td>
+                <td><input type="radio" name="stato" id="stato" value="Nuova">Nuova</td>
+                <td><input type="radio" name="stato" id="stato" value="Usata">Usata</td>
+            </tr>
+            <tr>
+                <td>Anno Costruzione: </td>
+                <td>
+                    <select name="anno" id="anno">
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Cilindrata: </td>
+                <td><input type="number" id="cilindrata" name="cilindrata"></td>
+            </tr>
+            <tr>
+                <td>Cavalli: </td>
+                <td><input type="text" id="cavalli" name="cavalli"></td>
+            </tr>
+            <tr>
+                <td>Prezzo: </td>
+                <td><input type="number" id="prezzo" name="prezzo">€</td>
+            </tr>
+            <tr>
+                <td>Targa: </td>
+                <td><input type="text" id="targa" name="targa"></td>
+            </tr>
+            <tr>
+                <td>Accessori: </td>
+                <td>
+                    <input type="checkbox" name="aria_cond" value="Aria_C">Aria Condizionata
+                    <input type="checkbox" name="vernice_meta" value="Vernice">Vernice Metalizzata
+                    <input type="checkbox" name="tetto" value="Tetto">Tetto in cristallo
+                    <input type="checkbox" name="radio" value="Radio">Impianto Radio-CD
+                </td>
+            </tr>
+            <tr>
+                <td>Descrizione Aggiuntiva: </td>
+                <td><textarea name="testo" id="testo" rows="8" cols="40"></textarea></td>
+            </tr>
+        </table>
+        <input type="submit" value="invia">
+        <input type="reset" value="cancella">
+    </form>
+</body>
+</html>
